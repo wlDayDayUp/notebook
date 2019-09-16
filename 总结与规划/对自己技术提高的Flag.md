@@ -1,4 +1,7 @@
+
+
 # 前言
+
 从Web后台开发转Android开发已经两年了，由于身在小公司，公司里面并没有所谓的技术大牛，只能通过各种方式的自学，来提高自己，这段时间里面真的是什么都学，有什么觉得新鲜的技术都喜欢去尝试，尽管和我实际工作没有直接关系（Android），从而形成了一个自己喜欢的技术栈——**以Javascript为基础大前端（Koa、Vue、Electron）、Android(工作)、Flutter**。
 技术更新迭代很快，学无止境，现在就以后的技术路线给自己定一个Flag，希望通过自己的努力，不断的提高自己的技能水平，最后能够做自己想做的事情，加油加油加油！！！
 
@@ -36,8 +39,12 @@
 | Node.js实战（第2版）.mobi                                    |
 | Node.js高级编程.pdf                                          |
 | 《Koa》                                                      |
+| SQL基础教程（第2版）.mobi                                    |
 | [Vue官方文档](https://cn.vuejs.org/v2/guide/routing.html)    |
 | 《Electron.js》                                              |
 | 《Flutter 技术入门与实战》                                   |
 | [Dart官方文档](http://dart.goodev.org/guides/language/language-tour) |
 
+
+
+[拥抱]
