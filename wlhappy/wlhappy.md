@@ -33,3 +33,39 @@
     }
    ```
 
+6. VersionUpdate
+
+   用于APP检查更新的实体类
+
+7. IDialogBtCallback
+
+   弹出框按钮的接口，确定，取消
+
+8. GlobConfig
+
+   全局配置类
+
+9. Url
+
+   接口配置
+
+10. CheckUpdate
+
+    检查更新
+
+11. MapLocationUtils
+
+    ​	高德地图定位工具类
+
+12. MyApp
+
+    Application
+
+13. Build.gradle （Project）
+
+    ```groovy
+    apply from: 'config.gradle'
+    ```
+
+14. Config.gradle
+

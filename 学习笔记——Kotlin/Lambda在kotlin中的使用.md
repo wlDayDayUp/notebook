@@ -110,16 +110,145 @@ fun main() {
 
 
 
-## 成员引用 (::运符)
+## 成员引用 (::运符) 在lambda里的使用
 
-> :: 运算符可以将函数转换成值，这样就可以当做函数参数传递，:: 称为成员引用，简化了，创建一个调用单个方法或者访问单个属性的函数值，:: 把类名和要引用的成员（一个方法或者一个属性）名称分隔开
+> 已经定义了一个函数或者方法，想把这个函数或方法当作lambda传递给函数，可以通过一个lambda调用定义的函数或方法，这未免有点累赘，而 **::** 成员引用运算符，它可以创建一个 **调用单个方法** 或者 **访问单个属性的函数值** ，:: 把类名和要引用的成员（一个方法或者一个属性）名称分隔开——为了简化操作，**如果是顶层函数，:: 右边的类名可以省略**
 
 ```kotlin
-val getAge = {person: Person -> person.age}
-// 等同于
-val getAge = Person::age
+fun doPhone(phone: String) {
+    println("打电话给 $phone")
+}
+
+fun doXXX(doing: (String) -> Unit) {
+    doing("1333333333");
+}
+
+fun main() {
+
+    doXXX(::doPhone)	// 通过成员引用简化调用
+
+    doXXX { doPhone(it) } // 通过lambda调用定义好的函数
+}
+// >> 打电话给 1333333333
+```
+
+- 类的成员方法的引用
+
+```kotlin
+// 如果是类的成员方法的引用
+Person::age 等同于 {p:Person -> p.age}
+```
+
+- 类构造方法的引用——存储或者延期执行创建类的实例的动作
+
+```kotlin
+data class Person(val name:String)
+
+fun main(){
+  val createPerson = ::Person
+  val person = createPerson("wlDayDayUp")
+  println(person)
+}
+```
+
+- 扩展函数的引用
+
+```kotlin
+fun String.doXXX() = "$this Hi !"
+
+fun main() {
+	val doing =	String::doXXX // doing 变量就是函数值（lambda表达式）{a:String -> "$a Hi !"}
+  
+  doing("123")
+}
+
+// >> 1213 Hi ！
 ```
 
 
 
-#Lambda与集合
+#集合的函数式API
+
+> 集合的函数式API，最大的好处就是简化代码，在这些API中，filter、map函数是基础
+
+## filter
+
+> filter函数遍历集合并选出应用 **给定lambda后返回true** 的那些元素，**结果是一个新的集合** 
+>
+> **作用** ：filter 可以移除集合不想要的元素，过滤元素
+
+```kotlin
+fun main(){
+  val list = listOf<Int>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+  val filter = list.filter { it % 2 == 0 }
+
+  println(filter)
+}
+// >> [2, 4, 6, 8, 10]
+```
+
+## map
+
+> map函数，对集合中的每一个元素应用给定的函数并把结果收集到一个新集合
+>
+> **作用** : 元素的交换
+
+```kotlin
+fun main(){
+  val list = listOf<Int>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+  
+  val map = list.map{
+    it * it
+  }
+  
+  println(map)
+}
+// >> [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
+
+## 组合使用filter、map
+
+> 最后结果需要获取年龄大于30的人名字
+
+```kotlin
+data class Person(val name: String, val age: Int)
+
+fun main(){
+  val persons = listOf<Person>(
+        Person("p1", 28),
+        Person("p2", 21),
+        Person("p3", 33),
+        Person("p4", 38)
+    )
+		
+  	// 注意，这部分可以用成员引用，简写
+    val person = persons.filter { it.age > 30 }.map { it.name }
+		// 简写
+	  // val person = persons.filter { it.age > 30 }.map(Person::name)
+  
+    println(person)
+}
+```
+
+## Map数据类型（filterKeys、filterValues、mapKeys、mapValues）
+
+> filterKeys、mapKeys: 分别对map的key过滤和替换
+>
+> filterValues、mapValues: 分别对map的Value过滤和替换
+
+```kotlin
+fun main(){
+   val mapOf = mapOf<Int, String>(0 to "xxx", 1 to "yyy")
+
+   val mapValues = mapOf.mapValues { it.value.toUpperCase() }
+
+   println(mapValues)
+}
+// >> {0=XXX, 1=YYY}
+```
+
+​																																		
+
+**——未完待续**
+
