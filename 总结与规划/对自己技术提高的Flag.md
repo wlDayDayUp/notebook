@@ -1,51 +1,81 @@
+# 当前任务
 
+> 完成了记得要在下面👇表格里面打一个绿色勾勾✅
 
-# 前言
+1. Kotlin、Java
 
-从Web后台开发转Android开发已经两年了，由于身在小公司，公司里面并没有所谓的技术大牛，只能通过各种方式的自学，来提高自己，这段时间里面真的是什么都学，有什么觉得新鲜的技术都喜欢去尝试，尽管和我实际工作没有直接关系（Android），从而形成了一个自己喜欢的技术栈——**以Javascript为基础大前端（Koa、Vue、Electron）、Android(工作)、Flutter**。
-技术更新迭代很快，学无止境，现在就以后的技术路线给自己定一个Flag，希望通过自己的努力，不断的提高自己的技能水平，最后能够做自己想做的事情，加油加油加油！！！
+   - kotlin实战.pdf
+   - 疯狂Kotlin讲义.pdf
+   - [kotlin官方文档](https://www.kotlincn.net/docs/reference/)
+   - Java面向对象编程.pdf
+   - [kotlin官方文档](https://www.kotlincn.net/docs/reference/)
 
-> 个人的学习宗旨就是：“在学好Android的基础上，通过Js扩展自己的技术栈，通过Flutter丰富端开发”
+   
 
-#	分析（2019-09-12）
--	Kotlin的出现真正是方便了Android端的开发，保持观望到现在，是时候应该好好的系统的学习一下 **Kotlin** 这门语言了，**《Kotlin实战》**，结合 **Java** 对照着学习效果更好
+2. Android
 
--	本职工作是Android开发，虽然工作两年了，但是依然感觉自己还是个菜鸟，必须静下心来，把 **Androd基础** 彻底学习明白而不是只知道怎么用，**《疯狂Andro讲义》** 是本不错的书，与此同时，**Android JetPack** 也需要用起来[Android JetPack官方文档](https://developer.android.com/jetpack)
+   - [Android官方文档](https://developer.android.com/guide/?hl=zh-cn)
+   - 疯狂Android讲义.pdf
+   - Android自定义控件.pdf
+   - 阿里巴巴Android开发手册.pdf
+   - Head+First设计模式(中文版).pdf
+   - 图解设计模式.pdf
 
--	要想写好代码，写高质量的代码，设计模式是不可缺少的，对 **设计模式** 的学习刻不容缓 **《图解设计模式》**
+# 第一梯队 **Android主要**
 
--	还在为看不懂英文技术文档而烦恼吗？还不开始好好学习英语啊！**英语流利说APP**
+| 学习项目                                                     | 总章数 | 完成情况 |
+| :----------------------------------------------------------- | :----: | :------: |
+| **语言类**                                                   | **——** |  **——**  |
+| kotlin实战.pdf                                               |   11   |          |
+| 疯狂Kotlin讲义.pdf                                           |   12   |          |
+| [kotlin官方文档](https://www.kotlincn.net/docs/reference/)   |   —    |          |
+| Java面向对象编程.pdf                                         |   22   |          |
+| **Android基础类**                                            | **——** |  **——**  |
+| [Android官方文档](https://developer.android.com/guide/?hl=zh-cn) |   —    |          |
+| 疯狂Android讲义.pdf                                          |   19   |          |
+| 疯狂Android讲义kotlin.pdf                                    |   19   |          |
+| Android studio 开发实战                                      |   16   |          |
+| 基于MD的用户界面设计                                         |   13   |          |
+| Android自定义控件.pdf                                        |   13   |          |
+| Android数据库程序设计.pdf                                    |   10   |          |
+| 深入剖析Android-开发小应用里的大智慧.pdf                     |   10   |          |
+| Android高级编程.pdf                                          |   11   |          |
+| Android UI 设计                                              |   18   |          |
+| **——**                                                       | **——** |  **——**  |
+| Android编程权威指南中文第3版.pdf                             |   35   |          |
+| Android项目开发实战                                          |   8    |          |
+| Android开发实例大全 第2版.pdf                                |   35   |          |
+| Android精彩编程200例.pdf                                     |   24   |          |
+| **——**                                                       | **——** |  **——**  |
+| Android设计模式                                              |   26   |          |
+| android 进阶之光                                             |   11   |          |
+| 高性能Android应用开发.pdf                                    |   8    |          |
+| 高级Android开发强化实战                                      |   8    |          |
+| 嵌入式Android编程                                            |   12   |          |
+| APP架构                                                      |   15   |          |
+| Tensorflow                                                   |        |          |
+| NDK                                                          |        |          |
+| JetPack                                                      |        |          |
+| **扩展类**                                                   | **——** |  **——**  |
+| 阿里巴巴Android开发手册.pdf                                  |   9    |          |
+| 图解设计模式.pdf                                             |   10   |          |
+| Head+First设计模式(中文版).pdf                               |   14   |          |
+| 精通Android Studio.pdf                                       |   16   |          |
+| Android Gradle权威指南.pdf                                   |   14   |          |
+| 深入理解Android上下                                          |   25   |          |
+| Linux                                                        |   19   |          |
+| Android安全技术揭秘与防范                                    |   11   |          |
+| Android软件安全权威指南                                      |   12   |          |
+| 深入剖析Android系统.pdf                                      |   21   |          |
+| Android应用安全防护和逆向分析.pdf                            |   26   |          |
+| Android系统安全和反编译实战.pdf                              |   22   |          |
+| Android系统安全与攻防.pdf                                    |   10   |          |
 
--	你说你最喜欢的开发语言是 **JavaScript** 是不是应该系统的学习一下呢？**《Javascript 全解》**，**《你不知道的JavaScript》**，**node** 的出现，开阔了Js的视野（服务器，前端，桌面应用，AI-Tensorflow-node），**《了不起的Node》**, **《Node.js高级编程》**，服务端 **《Koa》**，前端 [Vue官方文档](https://cn.vuejs.org/v2/guide/routing.html)，跨平台的 **《Electron.js》**
+# 第二梯队
 
-- 跨平台技术 **《Flutter》**，就目前好多大厂都用于实际项目中了，这个是以Dart为开发语言的，[Dart官方文档](http://dart.goodev.org/guides/language/language-tour)，[Flutter官方文档](https://flutterchina.club/get-started/install/)
-
-- 每天要坚持写点技术文档 **CSDN**，自己技术菜没关系，学习的过程还是需要有所记录的，所有加油吧
-
-##	表格记录（2019-09-12）
-对上面分析的做一个表格，方便查看
-| 学习内容                                                     |
-| ------------------------------------------------------------ |
-| 每天要坚持写点技术文档 **CSDN**                              |
-| 《Kotlin实战》                                               |
-| 《Java面向对象编程》                                         |
-| 《疯狂Andro讲义》                                            |
-| Professional Android, 4th Edition.pdf                        |
-| 图解设计模式.pdf                                             |
-| 英语流利说APP，每天坚持学习点                                |
-| Javascript 全解.pdf                                          |
-| 你不知道的JavaScript.pdf                                     |
-| 《了不起的Node》                                             |
-| Node.js实战（第2版）.mobi                                    |
-| Node.js高级编程.pdf                                          |
-| 《Koa》                                                      |
-| SQL基础教程（第2版）.mobi                                    |
-| [Vue官方文档](https://cn.vuejs.org/v2/guide/routing.html)    |
-| 《Electron.js》                                              |
-| 《Flutter 技术入门与实战》                                   |
-| [Dart官方文档](http://dart.goodev.org/guides/language/language-tour) |
-
-
-
-
-
+- C 上下
+- NDK
+- Flutter
+- Vue
+- IOS
+- Node
